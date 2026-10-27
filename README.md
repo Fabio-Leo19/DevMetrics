@@ -2,6 +2,10 @@
 
 **Seu código conta uma história.**
 
+🌐 **[Acesse o DevMetrics](https://devmetrics-fabio.netlify.app)**
+
+Explore perfis públicos do GitHub, descubra os projetos de outros desenvolvedores e compare trajetórias de programação.
+
 Criei o DevMetrics para explorar perfis públicos do GitHub de um jeito mais visual. Você digita um usuário, vê como os projetos dele se distribuem e pode comparar duas trajetórias lado a lado. A comparação serve para conhecer os trabalhos, não para dar uma nota de quem é o melhor programador.
 
 O layout começou no Figma. Depois transformei o protótipo em uma aplicação React que consulta a API pública do GitHub e monta os painéis com dados reais.
