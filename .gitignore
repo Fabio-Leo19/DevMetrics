@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.cache/
+*.tsbuildinfo
+*.log
+.DS_Store
+pnpm-lock.yaml
