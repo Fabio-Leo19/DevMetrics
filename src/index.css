@@ -216,3 +216,51 @@ footer { max-width: 1288px; padding-inline: 24px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Os ícones da atividade não devem encolher quando a data ocupa espaço. */
+.recent-list .repo-icon {
+  flex: 0 0 37px;
+  width: 37px;
+  height: 37px;
+}
+.recent-list > div > div {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.recent-list > div > div > span:last-child {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+.recent-list b,
+.recent-list small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .recent-list > div {
+    padding: 15px 13px;
+    gap: 10px;
+  }
+  .recent-list time {
+    flex: 0 0 auto;
+    margin-left: 2px;
+    font-size: 10px;
+  }
+  .recent-list small { max-width: 100%; }
+
+  /* O selo flutuante do host não deve cobrir o texto no fim da página. */
+  .app-shell > footer {
+    margin: 0 16px;
+    padding: 24px 0 calc(115px + env(safe-area-inset-bottom, 0px));
+    min-height: 0;
+    gap: 14px;
+  }
+  .app-shell > footer > span {
+    max-width: 320px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}
